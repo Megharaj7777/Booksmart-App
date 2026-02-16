@@ -103,12 +103,19 @@ export default function Dashboard() {
         setUrl('')
     }
 
-    const deleteBookmark = async (id) => {
-        await supabase
-            .from('bookmarks')
-            .delete()
-            .eq('id', id)
+const deleteBookmark = async (id) => {
+    const { error } = await supabase
+        .from('bookmarks')
+        .delete()
+        .eq('id', id)
+
+    if (error) {
+        console.log('Delete error:', error.message)
+    } else {
+        console.log('Deleted successfully')
     }
+}
+
 
     const editBookmark = (bookmark) => {
         setTitle(bookmark.title)
