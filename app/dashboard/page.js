@@ -109,12 +109,11 @@ const deleteBookmark = async (id) => {
         .delete()
         .eq('id', id)
 
-    if (error) {
-        console.log('Delete error:', error.message)
-    } else {
-        console.log('Deleted successfully')
+    if (!error) {
+        setBookmarks((prev) => prev.filter((b) => b.id !== id))
     }
 }
+
 
 
     const editBookmark = (bookmark) => {
