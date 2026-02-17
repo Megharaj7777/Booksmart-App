@@ -137,7 +137,7 @@ return (
     style={{ backgroundImage: "url('/bookmark-bg.jpg')" }}
   >
     {/* Dark Overlay */}
-    <div className="absolute inset-0 bg-black/80 backdrop-blur-md"></div>
+    <div className="absolute inset-0 bg-black/80"></div>
 
     {/* Glow Effects */}
     <div className="absolute w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-[140px] -top-40 -left-40"></div>
