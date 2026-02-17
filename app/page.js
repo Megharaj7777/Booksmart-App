@@ -36,8 +36,6 @@ export default function Home() {
   style={{ backgroundImage: "url('/bookmark-bg.jpg')" }}
 ></div>
 
-      {/* Main Card */}
-      <div className="relative z-10 w-full max-w-md p-10 rounded-2xl backdrop-blur-xl bg-white/5 border border-white/10 shadow-2xl">
 
         {/* Logo / Title */}
         <h1 className="text-4xl font-bold text-center mb-3 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 bg-clip-text text-transparent">
@@ -72,6 +70,5 @@ export default function Home() {
         </p>
 
       </div>
-    </div>
   )
 }

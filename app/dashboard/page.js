@@ -140,8 +140,6 @@ return (
   style={{ backgroundImage: "url('/bookmark-bg.jpg')" }}
 ></div>
 
-    <div className="relative z-10 max-w-4xl mx-auto bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-10 shadow-2xl">
-
       {/* Header */}
       <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-10 gap-6">
         <div>
@@ -229,6 +227,5 @@ return (
         </div>
       )}
     </div>
-  </div>
 )
 }
