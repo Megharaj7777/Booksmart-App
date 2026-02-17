@@ -31,8 +31,10 @@ export default function Home() {
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
 
       {/* Background Glow Effects */}
-      <div className="absolute w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-[120px] -top-40 -left-40"></div>
-      <div className="absolute w-[400px] h-[400px] bg-cyan-500/20 rounded-full blur-[120px] bottom-0 right-0"></div>
+      <div
+  className="relative h-screen flex items-center justify-center bg-cover bg-center"
+  style={{ backgroundImage: "url('/bookmark-bg.jpg')" }}
+></div>
 
       {/* Main Card */}
       <div className="relative z-10 w-full max-w-md p-10 rounded-2xl backdrop-blur-xl bg-white/5 border border-white/10 shadow-2xl">

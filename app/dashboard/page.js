@@ -135,8 +135,10 @@ return (
   <div className="relative min-h-screen px-6 py-16 bg-black overflow-hidden">
 
     {/* Background Glow Effects */}
-    <div className="absolute w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-[140px] -top-40 -left-40"></div>
-    <div className="absolute w-[400px] h-[400px] bg-cyan-500/20 rounded-full blur-[120px] bottom-0 right-0"></div>
+      <div
+  className="relative h-screen flex items-center justify-center bg-cover bg-center"
+  style={{ backgroundImage: "url('/bookmark-bg.jpg')" }}
+></div>
 
     <div className="relative z-10 max-w-4xl mx-auto bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-10 shadow-2xl">
 
